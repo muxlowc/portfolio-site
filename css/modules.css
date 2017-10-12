@@ -85,11 +85,11 @@ img {
 }
 
 svg {
-  fill: #515b4d;
+  fill: #9b9aa5;
 }
 
 svg:hover {
-  fill: #e1e0df;
+  fill: #444;
   transition: all 200ms linear;
 }
 
