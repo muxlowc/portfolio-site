@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+<head>
+  <meta charset="utf-8">
+  <title>Christina Muxlow</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="{{site.baseurl}}/css/modules.css" rel="stylesheet">
+  <link href="css/modules.css" rel="stylesheet">
+  <link href="{{site.baseurl}}/css/grid.css" rel="stylesheet">
+  <link href="css/grid.css" rel="stylesheet">
+  <link href="{{site.baseurl}}/css/type.css" rel="stylesheet">
+  <link href="{{site.baseurl}}/css/main.css" rel="stylesheet">
+  <script src="https://use.typekit.net/euw1bsu.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
+</head>
+<body>
+
+  <header class="nav nav-big grid grid-middle">
+    <div class="unit xs-1 s-1 m-1-2 l-1-4 xl-1-4">
+      <a href="https://christinamuxlow.ca">
+        <svg class="logo"><use xlink:href="{{site.baseurl}}/images/icons.svg#muxlow-logo"/></svg>
+      </a>
+    </div>
+    <nav class="unit xs-0 s-0 m-1-2 l-3-4 xl-3-4 text-left">
+      <ul class="list-group-inline">
+        <li><a class="push-r kilo padding-right current" href="{{site.baseurl}}/">work</a></li>
+        <li><a class="push-r kilo padding-right" href="{{site.baseurl}}/about/">about</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="home-banner content-text grid">
+      <div class="unit xs-1 s-1 m-1-2 unit-offset-m-1-2 l-3-4 unit-offset-l-1-4 xl-3-4 unit-offset-xl-1-4">
+        <h3>{{page.intro-title}}</h3>
+        {% if page.intro-key-words %}<p class="kilo"><em>{{page.intro-key-words}}</em></p>{% endif %}
+        <p>{{page.intro-text}}</p>
+      </div>
+    </section>
+    {{content}}
+  </main>
+
+  <footer>
+    <p class="micro">2017 Christina Muxlow</p>
+  </footer>
+
+</body>
+</html>
