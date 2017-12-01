@@ -36,12 +36,7 @@ a:hover {
 
 .portfolio-content img {
   width: 100%;
-  padding-right: 1.25em;
-  padding-bottom: 1.25em;
-}
-
-.portfolio-content {
-  padding: 4em 0.25em 1em;
+  margin: auto;
 }
 
 .home-banner {
@@ -69,14 +64,20 @@ p > a:hover {
 }
 
 .card {
-  background-image: url("../images/casa-layout1.png");
   background-size: cover;
   background-position: center;
   display: block;
   position: relative;
-  width: 300px;
-  height: 300px;
+  width: 100%;
   margin-bottom: 1em;
+}
+
+.card1 {
+  background-image: url("../images/casa-layout1.png");
+}
+
+.card2 {
+  background-image: url("../images/hintonburg-project.jpg");
 }
 
 .card-content {
@@ -97,13 +98,13 @@ p > a:hover {
   opacity: 1;
 }
 
+
 @media only screen and (min-width: 38em) {
   body {
     padding: 0em 4.5em;
   }
 
   .card {
-    background-image: url("../images/casa-layout1.png");
     background-size: cover;
     background-position: center;
     display: block;
@@ -113,7 +114,6 @@ p > a:hover {
     margin-right: 1em;
     margin-bottom: 1em;
   }
-
 }
 
 @media only screen and (min-width: 60em) {
@@ -126,7 +126,6 @@ p > a:hover {
   }
 
   .card {
-    background-image: url("../images/casa-layout1.png");
     background-size: cover;
     background-position: center;
     display: block;
@@ -135,6 +134,11 @@ p > a:hover {
     height: 283px;
     margin-right: 1em;
     margin-bottom: 1em;
+  }
+
+  .portfolio-content img {
+    width: 100%;
+    margin: auto;
   }
 }
 
