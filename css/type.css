@@ -71,6 +71,7 @@ caption {
   text-align: left;
 }
 
+
 th,
 td {
   border-bottom: 1px solid #000;
@@ -803,7 +804,6 @@ legend {
   ol,
   dl,
   dd,
-  figure,
   blockquote,
   details,
   hr,
@@ -812,6 +812,10 @@ legend {
   table,
   caption {
     margin: 0 0 1.5rem;
+  }
+
+  figure {
+    margin: 0;
   }
 
   .tenamega {
@@ -1130,7 +1134,6 @@ legend {
   ol,
   dl,
   dd,
-  figure,
   blockquote,
   details,
   hr,
@@ -1139,6 +1142,10 @@ legend {
   table,
   caption {
     margin: 0 0 1.5rem;
+  }
+
+  figure {
+    margin: 0;
   }
 
   .tenamega {
