@@ -14,14 +14,14 @@
 <body>
 
   <header class="nav nav-big grid grid-middle">
-    <div class="unit xs-1 s-1 m-1-2 l-1-4 xl-1-4">
-      <a href="index.html">
+    <div class="unit xs-1-2 s-1-2 m-1-2 l-1-4 xl-1-4">
+      <a href="{{site.baseurl}}/">
         <svg class="logo"><use xlink:href="{{site.baseurl}}/images/icons.svg#muxlow-logo"/></svg>
       </a>
     </div>
-    <nav class="unit xs-0 s-0 m-1-2 l-3-4 xl-3-4 text-left">
+    <nav class="unit xs-1-2 s-1-2 m-1-2 l-3-4 xl-3-4 text-left">
       <ul class="list-group-inline">
-        <li><a class="push-r kilo padding-right current" href="{{site.baseurl}}/">work</a></li>
+        <li><a class="push-r kilo padding-right" href="{{site.baseurl}}/">work</a></li>
         <li><a class="push-r kilo padding-right" href="{{site.baseurl}}/about/">about</a></li>
       </ul>
     </nav>
@@ -29,7 +29,7 @@
 
   <main>
     <section class="home-banner content-text grid">
-      <div class="unit xs-1 s-1 m-1-2 unit-offset-m-1-2 l-3-4 unit-offset-l-1-4 xl-3-4 unit-offset-xl-1-4">
+      <div class="unit xs-1 s-1 m-1 l-3-4 unit-offset-l-1-4 xl-3-4 unit-offset-xl-1-4">
         <h1 class="tera">{{page.intro-title}}</h1>
         {% if page.intro-key-words %}<p class="kilo"><em>{{page.intro-key-words}}</em></p>{% endif %}
         <p>{{page.intro-text}}</p>
