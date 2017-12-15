@@ -4,16 +4,13 @@
   <meta charset="utf-8">
   <title>Christina Muxlow</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link href="{{site.baseurl}}/css/modules.css" rel="stylesheet">
-  <link href="{{site.baseurl}}/css/grid.css" rel="stylesheet">
-  <link href="{{site.baseurl}}/css/type.css" rel="stylesheet">
-  <link href="{{site.baseurl}}/css/main.css" rel="stylesheet">
+  <link href="{{site.baseurl}}/css/site.css" rel="stylesheet">
   <script src="https://use.typekit.net/euw1bsu.js"></script>
   <script>try{Typekit.load({ async: true });}catch(e){}</script>
 </head>
 <body>
 
-  <header class="nav nav-big grid grid-middle">
+  <header id="top" class="nav nav-big grid grid-middle">
     <div class="unit xs-1-2 s-1-2 m-1-2 l-1-4 xl-1-4">
       <a href="{{site.baseurl}}/">
         <svg class="logo"><use xlink:href="{{site.baseurl}}/images/icons.svg#muxlow-logo"/></svg>
@@ -21,15 +18,18 @@
     </div>
     <nav class="unit xs-1-2 s-1-2 m-1-2 l-3-4 xl-3-4 text-left">
       <ul class="list-group-inline">
-        <li><a class="push-r kilo padding-right" href="{{site.baseurl}}/">work</a></li>
-        <li><a class="push-r kilo padding-right" href="{{site.baseurl}}/about/">about</a></li>
+        <li><a class="push-r kilo padding-right {% if "/" == page.url %}current{% endif %}" href="{{site.baseurl}}/">work</a></li>
+        <li><a class="push-r kilo padding-right {% if "/about/" == page.url %}current{% endif %}" href="{{site.baseurl}}/about/">about</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
     <section class="home-banner content-text grid">
-      <div class="unit xs-1 s-1 m-1 l-3-4 unit-offset-l-1-4 xl-3-4 unit-offset-xl-1-4">
+      <div class="unit xs-1 s-1 m-1 l-1 xl-1 pad-b-2 portfolio-content">
+        <img src="{{site.baseurl}}/images/{{page.intro-img}}" alt="">
+      </div>
+      <div class="unit xs-1 s-1 m-1 l-3-4 unit-offset-l-1-4 xl-3-4 unit-offset-xl-1-4 wrapper">
         <h1 class="tera">{{page.intro-title}}</h1>
         {% if page.intro-key-words %}<p class="kilo"><em>{{page.intro-key-words}}</em></p>{% endif %}
         <p>{{page.intro-text}}</p>
@@ -38,8 +38,9 @@
     {{content}}
   </main>
 
-  <footer>
-    <p class="micro">2017 Christina Muxlow</p>
+  <footer class="grid footer">
+    <p class="unit xs-1-2 s-1-2 m-1-2 l-1-2 xl-1-2 micro text-left">© 2017 Christina Muxlow</p>
+    <a class="unit xs-1-2 s-1-2 m-1-2 l-1-2 xl-1-2 micro text-right" href="mailto:hello@christinamuxlow.ca">hello@christinamuxlow.ca</a>
   </footer>
 
 </body>
