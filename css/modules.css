@@ -76,6 +76,7 @@ textarea,
 
 img {
   border: 0;
+  padding: 0.7em;
 }
 
 .img-flex,
@@ -799,7 +800,7 @@ textarea {
   width: 100%;
 
   background-color: #fff;
-  border: 2px solid #666;
+  border: 1px solid #999;
   border-radius: 0;
 
   vertical-align: middle;
@@ -807,6 +808,7 @@ textarea {
 
 label {
   vertical-align: middle;
+  margin-top: 1em;
 }
 
 textarea {
@@ -1013,7 +1015,7 @@ button,
 .btn {
   cursor: pointer;
   display: inline-block;
-  margin: 0;
+  margin-top: 2em;
   overflow: visible;
   padding: .375em .75em .42em;
   -webkit-appearance: none;

@@ -40,8 +40,8 @@ a:hover {
 }
 
 .home-banner {
-  padding-top: 3em;
-  padding-bottom: 3em;
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
 }
 
 .current {
@@ -81,7 +81,7 @@ p > a:hover {
   margin-top: 5em;
 }
 
-footer {
+.footer {
   display: block;
   margin-top: 5em;
   margin-bottom: 2em;
@@ -142,15 +142,20 @@ footer {
     opacity: 0;
     background-color: #fff;
     transition: all 400ms;
-    margin: 1em;
+    margin: 2em;
     padding: 100px 20px;
     text-align: center;
+  }
+
+  .home-banner {
+    padding-top: 2em;
+    padding-bottom: 2em;
   }
 
   .portfolio-content img {
     width: 100%;
     margin: auto;
-    padding: 0 0.2em;
+    padding: 0.7em 0.7em;
   }
 }
 
