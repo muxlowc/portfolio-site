@@ -2,7 +2,7 @@
 <html lang="en-ca">
 <head>
   <meta charset="utf-8">
-  <title>Christina Muxlow</title>
+  <title>Christina Muxlow Portfolio</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href="{{site.baseurl}}/css/site.css" rel="stylesheet">
   <script src="https://use.typekit.net/euw1bsu.js"></script>
@@ -36,6 +36,31 @@
       </div>
     </section>
     {{content}}
+
+    {% assign currentindex = 0 %}
+    {% for work in site.data.pages.pages %}
+      {% if page.url contains work %}
+      {% assign currentindex = forloop.index0 %}
+      {% endif %}
+    {% endfor %}
+    {% assign previndex = currentindex|minus :1 %}
+    {% assign prevurl = site.data.pages.pages[previndex] %}
+    {% assign nextindex = currentindex|plus :1 %}
+    {% assign nexturl = site.data.pages.pages[nextindex] %}
+
+    {% unless page.hide-nextprev-nav %}
+    <section class="scrub grid">
+      <div class="unit xs-1-2 s-1-2 m-1-2 l-1-4 xl-1-4">
+        <a class="text-left" href="{{site.baseurl}}/{{prevurl}}"><p>« Previous Project</p></a>
+      </div>
+      <div class="unit xs-0 s-0 m-0 l-1-2 xl-1-2">
+        <a class="text-center" href="#top"><p>Back to Top</p></a>
+      </div>
+      <div class="unit xs-1-2 s-1-2 m-1-2 l-1-4 xl-1-4">
+        <a class="text-right" href="{{site.baseurl}}/{{nexturl|default:site.data.pages.pages[0]}}"><p>Next Project »</p></a>
+      </div>
+    </section>
+    {% endunless %}
   </main>
 
   <footer class="grid footer">
