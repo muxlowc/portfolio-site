@@ -128,12 +128,12 @@ thead th {
 
 .wrapper {
   margin-right: auto;
-  max-width: 52em;
+  max-width: 43em;
   width: 100%;
 }
 
 .wrapper-no-center {
-  max-width: 52em;
+  max-width: 43em;
   width: 100%;
 }
 
@@ -1316,7 +1316,7 @@ legend {
 
   .push-right,
   .push-r {
-    margin-right: 1.5rem;
+    margin-right: 2rem;
   }
 
   .pad-top,
